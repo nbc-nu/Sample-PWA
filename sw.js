@@ -11,7 +11,7 @@ const ASSETS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('PWA: Arquivos essenciais salvos no cache.');
+      console.log('all files sucessfuly saved in cache.');
       return cache.addAll(ASSETS);
     })
   );
